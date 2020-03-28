@@ -1,0 +1,9 @@
+<form>    
+    <label>Email</label>
+    <input type="text" #email required>
+
+    <label>Password</label>
+    <input type="password" #password required>
+
+    <button type="submit" (click)="signUp(email, password)" expand="block">Register</button>
+</form> 

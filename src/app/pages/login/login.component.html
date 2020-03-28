@@ -1,0 +1,15 @@
+<form>    
+    <label>Email</label>
+    <input type="text" #email required>
+
+    <label>Password</label>
+    <input type="password" #password required>
+
+    <button type="submit" (click)="logIn(email, password)">Login</button>
+
+    <button type="submit" (click)="recoverPassword(email)">Forgot password?</button>
+
+    <button type="submit" color="danger" (click)="logInGoogle()">
+        Login with Google
+    </button>
+</form>
